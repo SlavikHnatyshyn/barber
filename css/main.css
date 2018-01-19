@@ -1,0 +1,282 @@
+/*
+    Adjustment settings
+    0. Grid
+    1. Header
+        1.1 Nav
+        1.2 Registration
+    2. Logo
+*/
+
+/***
+**
+** Adjustment Settings
+**
+***/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'PTSansNarrowRegular', sans-serif;
+}
+
+/***
+**
+** 0. Grid
+**
+***/
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    position:relative;
+}
+.column-wrap {
+    font-size: 0;
+}
+.column-wrap > div {
+    font-size: 16px;
+    display: inline-block;
+}
+.column-4 {
+    width: 67%;
+}
+.column-2 {
+    width: 33%;
+}
+
+
+/***
+**
+** 1. Header
+**
+***/
+
+.header {
+    background: #000;
+    width: 100%;
+}
+
+
+
+/***
+**
+** 1.1 Nav
+**
+***/
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0 30px;
+
+}
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 26px 0 26px 0;
+    position: relative;
+}
+
+.nav-link:before,
+ .nav-link:after{
+  content: '';
+  height: 3px;
+  width: 0%;
+  background:#826550;
+  position: absolute;
+  bottom: 0;
+  transition: width .2s linear; /*linear ease-in ease-out esae-in-out*/
+ 
+}
+
+
+.nav-link:before{
+    right: 50%;
+}
+.nav-link:after{
+    left: 50%;
+}
+
+.nav-link:hover:before,
+ .nav-link:hover:after{
+    width:50%;
+}
+
+
+
+
+
+
+/***
+**
+** 1.2 Registration
+**
+***/
+
+.header-btn-wrap {
+    text-align: right;
+    padding-right: 30px;
+}
+.login-btn {
+    background: none;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: 'PTSansNarrowRegular';
+    font-size: 18px;
+    padding: 0 0 0 35px;
+    background: url('../img/login.svg') center left no-repeat;
+    letter-spacing: .8px;
+}
+
+.login-btn:hover {
+    color: #826550;
+}
+
+
+/***
+**
+** 2. Logo
+**
+***/
+
+.logo-wrap {
+    background: url('../img/back-desktop.jpg') center center no-repeat;
+    background-size: cover;
+    padding: 55px 0 455px 0;
+    text-align: center;
+}
+
+.statistics {
+    background: #fff;
+   margin-top: -160px;
+   position:relative;
+   z-index: 9;
+
+}
+
+.column-4--statistics-column {
+    float: right;
+
+}
+
+.statistics-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.statistics-item {
+    display: inline-block;
+    font-size: 16px;
+    width: 50%;
+    min-height: 160px;
+    padding: 20px 35px;
+    vertical-align: top;
+}
+
+.statistics-count {
+    color: #fff;
+    font-family: 'PTSansNarrowBold';
+    font-size: 72px;
+}
+
+.statistics-count-descr {
+    margin: 10px 0 0 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.statistics-item:nth-child(1) {
+    background: #404040;
+}
+.statistics-item:nth-child(2) {
+    background: #4e4e4e;
+}
+.statistics-item:nth-child(3) {
+    background: #353535;
+}
+.statistics-item:nth-child(4) {
+    background: #404040;
+}
+
+.statistics__header-wrap{
+    padding:30px 40px;
+    position: relative;
+
+}
+
+.statistics__header-wrap:before{
+    content: '';
+    position: absolute;
+    border: 12px solid transparent;   
+     border-top: 8px solid #fff;
+      border-right: 20px solid #fff;
+   left: -20px;
+   top:40px;
+}
+
+.statistics__title{
+    font-size: 40px;
+    line-height: 40px;
+    color: #000;
+    font-weight: normal;
+    font-family: 'PTSansNarrowBold', sans-serif;
+    margin:0 0  45px 0;
+}
+
+.statisctics__descr{
+    margin:0;
+    font-size: 20px;
+    line-height: 27px;
+    color:#000;
+    margin:0 0  35px 0;
+}
+
+.statistics__note{
+    color: rgba(0,0,0.3);
+    font-size: 20px;
+    line-height: .9;
+}
+
+
+.features{
+    background:#353535;
+    margin-top: -160px;
+    padding-top: 160px;
+}
+
+.features__list{
+   
+    margin:0;
+    padding:0;
+    list-style: none;
+}
