@@ -534,3 +534,32 @@ body {
 .testimonials__slider-dots-item--active .testimonials__slider-dots-btn {
     background: #000;
 }
+
+/***
+**
+** footer
+**
+***/
+
+.footer{
+    background: #292929;
+    margin: 46px 0 0 0;
+}
+
+.footer__address--name{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 58px 0 0 0;
+   font-weight: normal;
+    font-family: 'PTSansNarrowBold';
+}
+
+.footer__address--date{
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'PTSansNarrowRegular';
+    line-height: 27px;
+    padding: 23px 0 61px 0;
+}
